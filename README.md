@@ -23,8 +23,8 @@ Ensure you have the following installed:
 ## Setup Instructions
 ### 1. Clone the repository
 ```sh
-git clone https://github.com/your-username/gymfinder-backend.git
-cd gymfinder-backend
+git clone https://github.com/your-username/gymfinder-backend-springboot.git
+cd gymfinder-backend-springboot
 ```
 
 ### 2. Set up the database
@@ -48,18 +48,18 @@ mvn spring-boot:run
 
 ## API Endpoints
 ### Authentication
-| Method | Endpoint            | Description          |
-|--------|--------------------|----------------------|
-| POST   | `/auth/register`   | Register a new user |
-| POST   | `/auth/login`      | User login (JWT)    |
+| Method | Endpoint         | Description          |
+|--------|------------------|----------------------|
+| POST   | `api/auth/signup` | Register a new user |
+| POST   | `api/auth/login` | User login (JWT)    |
 
 ### Gym Operations
-| Method | Endpoint          | Description                      |
-|--------|------------------|----------------------------------|
-| GET    | `/gyms`          | Get all gyms                    |
-| POST   | `/gyms`          | Add a new gym (Admin only)      |
-| PUT    | `/gyms/{id}`     | Update gym details (Admin only) |
-| DELETE | `/gyms/{id}`     | Delete a gym (Admin only)       |
+| Method | Endpoint        | Description                      |
+|--------|-----------------|----------------------------------|
+| GET    | `api/gyms`      | Get all gyms                    |
+| POST   | `api/gyms`      | Add a new gym (Admin only)      |
+| PUT    | `api/gyms/{id}` | Update gym details (Admin only) |
+| DELETE | `api/gyms/{id}` | Delete a gym (Admin only)       |
 
 ### Membership Management
 | Method | Endpoint                | Description                         |
@@ -72,5 +72,5 @@ mvn spring-boot:run
 This project is licensed under the MIT License.
 
 ## Contributors
-- [Your Name](https://github.com/your-username)
+- [Your Name](https://github.com/ajinkyashivpure)
 
